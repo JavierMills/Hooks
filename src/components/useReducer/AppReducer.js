@@ -1,71 +1,90 @@
-import React, {useReducer} from 'react'
+import React, {useEffect, useReducer} from 'react'
+import { useForm } from '../../hooks/useForm'
 import './styles.css'
+import TodoAdd from './TodoAdd'
+import { TodoList } from './TodoList'
 import {reducer} from './TodoReducer'
 
+//valor inicila de la tarea
 
-const initialstate = [{
-    id: new Date().getTime(),
-    description: "todo",
-    done: false,
-}]
+const init = () => {
 
+//le damos la instruccion de que traiga del local storage el item todos, si no estan en lugar que traiga un NULL le decimos con el operasor or que traiga un array vacio
+    return JSON.parse(localStorage.getItem("todos")) || [];
+//   return  [{
+//         id: new Date().getTime(),
+//         desc: "Todo",
+//         done: false,
+//     }]
+}
 
+//Creamos el Functional Component
 const AppReducer = () => {
+//Creamos el hook use Reducer, en donde reducer es un componente aparte 
+    const [todos, dispatch] = useReducer(reducer, [], init);
 
-    const [todos] = useReducer(reducer, initialstate);
-    // const reducer1 = reducer;
-    // console.log(todos);
-console.log(todos);
+//cada vez que se cambe un todo se guardara en el loal storage
+useEffect(() =>{
+    localStorage.setItem("todos", JSON.stringify(todos));
+}, [todos])
+
+
+const handleDelete =( todoId ) => {
+
+    const action = {
+        type:"delete",
+        payload: todoId,
+
+    };
+
+    dispatch(action);
+
+}
+
+const handleToggle = (todoId) =>{
+
+    dispatch({
+        type: "toggle",
+        payload: todoId
+    })
+
+}
+
+const handleAddTodo = (newtodo) => {
+
+    dispatch({
+        type:"add",
+        payload: newtodo,
+    });
+}
+
+// console.log(todos);
 
   return (
      <div>
        
         <h1 className='fer'>Reducer({todos.length})</h1>
-        <p className='p'></p>
-            <br />
-        <div className='row'>
+       <br/>
+            
+        <div className='row mt-4'>
 
             <div className='col-7'>
-                
-                    <ul className='list-group list-group-flush' >
-                    {
-                        todos.map( (todo , i) => (
-                            <li 
-                            key={todo.id} 
-                            className="list-group-item">
+                <h2>Tareas</h2>
 
-                            <p className='text-center complete'> {i + 1}.  {todo.description}</p>
-                            
-                                <button class="btn btn-outline-warning" type="button">Agregar</button>
-                                
-                            </li>
-                    ))
-                        
-                        
-                    }
-
-                    </ul>
+                    < TodoList 
+                        todos={todos}
+                        handleDelete= {handleDelete}
+                        handleToggle = {handleToggle}
+                    />
             </div>
 
             <div className='col-5'>
-                <h4>Agregar Task</h4>
+               
+               <TodoAdd 
+                handleAddTodo={handleAddTodo}
+               
+               />
 
-                <form>
-
-                    <input 
-                    type="text"
-                    name="description"
-                    className='form-control'
-                    placeholder='Agregar'
-                    autoComplete='off'
-                    />
-
-                 <div class="d-grid gap-2 d-md-block">
-                <button className='btn btn-outline-info'>Agregar Nueva Tarea</button>
-                    
-                    </div>
-
-                </form>
             </div>
 
         </div>
@@ -74,28 +93,3 @@ console.log(todos);
   )
 }
 export default AppReducer;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <nav className='navbar'>
-            <ul className='list'>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-            </ul> */}
-        {/* </nav> */}

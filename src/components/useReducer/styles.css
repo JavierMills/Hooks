@@ -1,6 +1,6 @@
 body{
     padding: 40px;
-    background: url("../../assetes/svg/endless-constellation.svg");
+    background: url("../../assetes/svg/spectrum-gradient.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
+
 }
 
 /* .navbar{
@@ -37,7 +38,7 @@ hr{
 }
 .col-7{
     color: #fff;
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
 }
 
 .col-5{
@@ -48,6 +49,7 @@ hr{
 }
 
 .list-group-item{
+    background: transparent;
     align-items: center;
     display: flex;
     justify-content: space-between;
