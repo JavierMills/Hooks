@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import { BrowserRouter } from 'react-router-dom';
+import MainApp from './components/useContex/MainApp';
 // import { CallBackHook } from './components/memos/CallBackHook';
-import AppReducer from './components/useReducer/AppReducer'
+// import AppReducer from './components/useReducer/AppReducer'
 // import { MemoHook } from './components/memos/MemoHook';
 // import { Memorize } from './components/memos/Memorize';
 // import { Layout } from './components/useLayoutEffect/Layout';
@@ -14,9 +16,14 @@ import AppReducer from './components/useReducer/AppReducer'
 // import { CounterApp } from './components/CounterApp';
 // import { CounterWithCoustomHook } from './components/useState/CounterWithCoustomHook';
 // import { HooksApp } from './HooksApp';
+// import {AppRouter} from './components/useContex/AppRouter';
 
 ReactDOM.render(
-    <AppReducer />,
+  
+   
+    <MainApp />,
+
+  
   document.getElementById('root')
 );
 

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente Hooks <Hooks /> Dede Mostrarse Correctamente  1`] = `
+<div>
+  <h1>
+    Hola Javier
+  </h1>
+</div>
+`;
