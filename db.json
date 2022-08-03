@@ -1,0 +1,96 @@
+{
+    "Folio_Nafinet":[
+        
+    {
+        "id": 344,
+        "Clave": 123999,
+        "FechaCarga": "31/09/2026",
+        "Registros": 0,
+        "Sumatoria": 3000000,
+        "Dias": 3,
+        "Usuario_Cargo":"Ramiro Javier Martinez Cruz",
+        "Excel": "DESCARGAR",
+        "TXT": "DESCARGAR",
+        "PDF": "DESCARGAR"
+      },
+             
+    {
+        "id": 233,
+        "Clave": 344455,
+        "FechaCarga": "9/06/2921",
+        "Registros":5,
+        "Sumatoria": 235000,
+        "Dias": 6,
+        "Usuario_Cargo":"Ramiro javier Martinez Cruz",
+        "Excel": "DESCARGAR",
+        "TXT": "DESCARGAR",
+        "PDF": "DESCARGAR"
+      },
+             
+    {
+        "id": 342,
+        "Clave": 675757,
+        "FechaCarga": "24/8/2022",
+        "Registros": 4,
+        "Sumatoria": 7000000,
+        "Dias": 345,
+        "Usuario_Cargo":"Ramiro Javier Martinez Cruz",
+        "Excel": "DESCARGAR",
+        "TXT": "DESCARGAR",
+        "PDF": "DESCARGAR"
+      },
+             
+    {
+        "id": 455,
+        "Clave": 545553,
+        "FechaCarga": "9/7/2000",
+        "Registros": 34,
+        "Sumatoria": "",
+        "Dias": "",
+        "Usuario_Cargo":"Ramiro Javier Martinez Cruz",
+        "Excel": "DESCARGAR",
+        "TXT": "DESCARGAR",
+        "PDF": "DESCARGAR"
+      },
+           
+      {
+        "id": 432,
+        "Clave": 999884,
+        "FechaCarga": "9/08/2002",
+        "Registros":32,
+        "Sumatoria": 233300,
+        "Dias": 44,
+        "Usuario_Cargo":"Ramiro Javier Martinez Cruz",
+        "Excel": "DESCARGAR",
+        "TXT": "DESCARGAR",
+        "PDF": "DESCARGAR"
+      },
+            
+    {
+        "id": 455,
+        "Clave": 777676,
+        "FechaCarga": "9/08/2002",
+        "Registros":445,
+        "Sumatoria": 734343,
+        "Dias": 322,
+        "Usuario_Cargo":1234,
+        "Excel": "DESCARGAR",
+        "TXT": "DESCARGAR",
+        "PDF": "DESCARGAR"
+      },
+            
+    {
+        "id": 465,
+        "Clave": 421211,
+        "FechaCarga": "9/08/2002",
+        "Registros": 443,
+        "Sumatoria":3445,
+        "Dias": 23,
+        "Usuario_Cargo":1234,
+        "Excel": "DESCARGAR",
+        "TXT": "DESCARGAR",
+        "PDF": "DESCARGAR"
+      }
+]
+    
+}
