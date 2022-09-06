@@ -3,6 +3,7 @@
         
     {
         "id": 344,
+        "estatus": "PN",
         "Clave": 123999,
         "FechaCarga": "31/09/2026",
         "Registros": 0,
@@ -16,6 +17,7 @@
              
     {
         "id": 233,
+        "estatus": "P",
         "Clave": 344455,
         "FechaCarga": "9/06/2921",
         "Registros":5,
@@ -29,6 +31,7 @@
              
     {
         "id": 342,
+        "estatus": "P",
         "Clave": 675757,
         "FechaCarga": "24/8/2022",
         "Registros": 4,
@@ -42,6 +45,7 @@
              
     {
         "id": 455,
+        "estatus": "PN",
         "Clave": 545553,
         "FechaCarga": "9/7/2000",
         "Registros": 34,
@@ -55,6 +59,7 @@
            
       {
         "id": 432,
+        "estatus": "PN",
         "Clave": 999884,
         "FechaCarga": "9/08/2002",
         "Registros":32,
@@ -68,6 +73,7 @@
             
     {
         "id": 455,
+        "estatus": "P",
         "Clave": 777676,
         "FechaCarga": "9/08/2002",
         "Registros":445,
